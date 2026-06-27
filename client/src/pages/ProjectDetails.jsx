@@ -135,20 +135,20 @@ const ProjectDetails = () => {
                 <span className="w-8 h-[3px] bg-accent1 block"></span>
                 {language === 'fr' ? 'Captures d\'écran' : 'Screenshots'}
               </h2>
-              <div className="grid grid-cols-1 gap-12">
+              <div className={`grid grid-cols-1 ${project.screenshots.length > 1 ? 'md:grid-cols-2' : ''} gap-8`}>
                 {project.screenshots.map((imgUrl, idx) => (
-                  <div key={idx} className="rounded-2xl overflow-hidden border border-gray-800 shadow-2xl group relative">
-                    <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity z-10 pointer-events-none"></div>
+                  <div key={idx} className="rounded-2xl overflow-hidden border border-gray-800/80 shadow-2xl group relative bg-gray-950/40 hover:border-accent1/30 transition-all flex justify-center items-center p-4 min-h-[300px]">
                     <img 
                       src={imgUrl} 
                       alt={`${project.title} screenshot ${idx + 1}`} 
-                      className="w-full h-auto object-cover transform group-hover:scale-105 transition-transform duration-700"
+                      className="max-h-[460px] w-auto object-contain rounded-lg transform group-hover:scale-[1.02] transition-transform duration-500"
                     />
                   </div>
                 ))}
               </div>
             </section>
           )}
+
 
         </div>
 

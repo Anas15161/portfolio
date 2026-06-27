@@ -307,8 +307,7 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/f59e0b?text=J2EE+ERP+Dashboard",
-      "https://placehold.co/1200x800/111827/f59e0b?text=Oracle+XE+Integration"
+      "/projects/smartstock/logo.png"
     ],
     stack: ["Jakarta EE 10", "Java 17", "Hibernate", "Oracle XE", "Jersey", "JSP"],
     status: { fr: "Projet Académique", en: "Academic Project" },
@@ -378,8 +377,9 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/4f46e5?text=GestionNotes+Django+UI",
-      "https://placehold.co/1200x800/111827/4f46e5?text=Django+Database+Admin"
+      "/projects/notesdjango/home.jpeg",
+      "/projects/notesdjango/stats.jpeg",
+      "/projects/notesdjango/admin.jpeg"
     ],
     stack: ["Django", "Python", "SQLite", "Bootstrap", "HTML/CSS"],
     status: { fr: "Projet Académique", en: "Academic Project" },
@@ -413,8 +413,9 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/b07219?text=Java+Swing+Interface",
-      "https://placehold.co/1200x800/111827/b07219?text=MySQL+JDBC+Connection"
+      "/projects/notesswing/login.png",
+      "/projects/notesswing/Gestion_etudiants.png",
+      "/projects/notesswing/Gestion_notes.png"
     ],
     stack: ["Java SE", "Swing", "MySQL", "JDBC"],
     status: { fr: "Projet Académique", en: "Academic Project" },
@@ -448,8 +449,10 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/0285a2?text=Hospital+UML+Model",
-      "https://placehold.co/1200x800/111827/0285a2?text=Django+Hospital+Portal"
+      "/projects/hospital/landing_page.png",
+      "/projects/hospital/tableau_bord.png",
+      "/projects/hospital/secretaire_dashboard.png",
+      "/projects/hospital/class.png"
     ],
     stack: ["Django", "UML Modeling", "Python", "MySQL", "Bootstrap"],
     status: { fr: "Projet Académique", en: "Academic Project" },
