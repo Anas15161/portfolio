@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useScrollSpy } from '../../hooks/useScrollSpy';
 import { useLanguage } from '../../contexts/LanguageContext';
 import { Menu, X, FileText } from 'lucide-react';
@@ -23,6 +24,8 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isCvOpen, setIsCvOpen] = useState(false);
   const { t, language } = useLanguage();
+  const navigate = useNavigate();
+  const location = useLocation();
   
   const activeSection = useScrollSpy(navLinks.map(link => link.id));
 
@@ -36,12 +39,16 @@ const Navbar = () => {
 
   const scrollToSection = (id) => {
     setIsMobileMenuOpen(false);
-    const element = document.getElementById(id);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80,
-        behavior: 'smooth'
-      });
+    if (location.pathname !== '/') {
+      navigate('/#' + id);
+    } else {
+      const element = document.getElementById(id);
+      if (element) {
+        window.scrollTo({
+          top: element.offsetTop - 80,
+          behavior: 'smooth'
+        });
+      }
     }
   };
 
