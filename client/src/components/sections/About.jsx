@@ -70,13 +70,12 @@ const About = () => {
               className="text-gray-400 text-lg leading-relaxed mb-10 bio-content"
               dangerouslySetInnerHTML={{ __html: personalInfo.bio[language] }}
             ></p>
-
             {/* Stats */}
             <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
               <div className="glass p-6 rounded-2xl border border-gray-800/50 text-center relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent1/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <div className="text-4xl md:text-5xl font-black text-accent1 mb-2 relative z-10 drop-shadow-lg">
-                  <CountUp end={5} duration={2.5} enableScrollSpy />+
+                  <CountUp end={10} duration={2.5} enableScrollSpy />+
                 </div>
                 <div className="text-sm font-bold tracking-wider uppercase text-gray-400 relative z-10 group-hover:text-white transition-colors">{language === 'fr' ? 'Projets' : 'Projects'}</div>
               </div>
