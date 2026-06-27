@@ -4,10 +4,15 @@ import { useLanguage } from '../../contexts/LanguageContext';
 
 const CvViewer = ({ isOpen, onClose }) => {
   const { language } = useLanguage();
+  
   // Chemin vers votre CV dans le dossier public
   const cvPath = "/CV_Anas_Haddou_ATS-1.pdf"; 
-  
 
+  // Déterminer la source de l'iframe (native sur localhost, Google Docs Viewer en production pour bypasser le service worker et supporter mobile)
+  const isLocalhost = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+  const iframeSrc = isLocalhost 
+    ? `${cvPath}?v=1.1#toolbar=0&navpanes=0` 
+    : `https://docs.google.com/gview?url=${encodeURIComponent(window.location.origin + cvPath)}&embedded=true`;
 
   return (
     <AnimatePresence>
@@ -54,12 +59,11 @@ const CvViewer = ({ isOpen, onClose }) => {
                 </button>
               </div>
             </div>
- 
+
             {/* PDF Viewer Body */}
             <div className="flex-1 bg-gray-900 w-full h-full relative">
-              {/* Fallback to embedded Google Docs viewer if local PDF fails, or use native iframe */}
               <iframe 
-                src={`${cvPath}?v=1.1#toolbar=0&navpanes=0`} 
+                src={iframeSrc} 
                 title="CV Viewer"
                 className="w-full h-full border-none bg-white"
               >
