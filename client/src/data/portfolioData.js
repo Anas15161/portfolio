@@ -125,8 +125,10 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/38bdf8?text=Smart+Grid+Dashboard",
-      "https://placehold.co/1200x800/111827/38bdf8?text=RL+Agent+Simulation"
+      "/projects/smartgrid/smart-grid.png",
+      "/projects/smartgrid/usecase.jpeg",
+      "/projects/smartgrid/seq.jpeg",
+      "/projects/smartgrid/class.jpeg"
     ],
     stack: ["React", "Python", "PyTorch", "Kafka", "MQTT", "InfluxDB", "Docker"],
     status: { fr: "Terminé (EMG)", en: "Completed (EMG)" },
@@ -160,8 +162,10 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/10b981?text=Churn+Simulation+Form",
-      "https://placehold.co/1200x800/111827/10b981?text=Batch+Upload+Interface"
+      "/projects/churn/screenshot_prediction_individuelle.png",
+      "/projects/churn/screenshot_prediction_groupe.png",
+      "/projects/churn/figure14_confusion_matrices.png",
+      "/projects/churn/figure17_facteurs_determinants.png"
     ],
     stack: ["Flask", "Python", "Scikit-Learn", "SMOTEENN", "HTML/CSS/JS", "Pandas"],
     status: { fr: "Livré", en: "Delivered" },
@@ -195,8 +199,7 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/6366f1?text=DevOps+Live+Metrics",
-      "https://placehold.co/1200x800/111827/6366f1?text=Jest+Visual+Test+Report"
+      "/projects/devops/banner.png"
     ],
     stack: ["Node.js", "Express", "Jest", "Docker", "GitHub Actions", "Makefile"],
     status: { fr: "Opérationnel", en: "Operational" },
@@ -230,8 +233,10 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/ef4444?text=MiniShop+Homepage",
-      "https://placehold.co/1200x800/111827/ef4444?text=Admin+Logistics+Management"
+      "/projects/minishop/Acceuil_heroSection_headerbar.jpeg",
+      "/projects/minishop/boutiqueClientPage.jpeg",
+      "/projects/minishop/cart.jpeg",
+      "/projects/minishop/Invoice.jpeg"
     ],
     stack: ["Laravel 12", "Tailwind CSS", "AlpineJS", "Vite", "MySQL", "DomPDF"],
     status: { fr: "Livré", en: "Delivered" },
@@ -265,8 +270,10 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/600x1200/111827/0ea5e9?text=StockMaster+Mobile+Home",
-      "https://placehold.co/600x1200/111827/0ea5e9?text=StockMaster+QR+Scanner"
+      "/projects/stockmaster/Tableau_de_bord.png",
+      "/projects/stockmaster/products_list.png",
+      "/projects/stockmaster/codescanner.png",
+      "/projects/stockmaster/login.jpeg"
     ],
     stack: ["Flutter", "Dart", "SQLite", "BLoC", "MVVM", "FL Chart"],
     status: { fr: "Terminé", en: "Completed" },
@@ -335,8 +342,9 @@ export const projectsData = [
       ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/111827/da291c?text=PlayerPredict+Interface",
-      "https://placehold.co/1200x800/111827/da291c?text=ML+Evaluation+Metrics"
+      "/projects/playerpredict/screenshot_app_bruno.png",
+      "/projects/playerpredict/screenshot_app_sancho.png",
+      "/projects/playerpredict/comparaison_modeles.png"
     ],
     stack: ["Python", "Scikit-Learn", "XGBoost", "HTML/JS", "Pandas", "Joblib"],
     status: { fr: "Terminé", en: "Completed" },
