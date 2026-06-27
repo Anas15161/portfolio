@@ -4,9 +4,10 @@ import { useLanguage } from '../../contexts/LanguageContext';
 
 const CvViewer = ({ isOpen, onClose }) => {
   const { language } = useLanguage();
-  
   // Chemin vers votre CV dans le dossier public
-  const cvPath = "/cv.pdf"; 
+  const cvPath = "/CV_Anas_Haddou_ATS-1.pdf"; 
+  
+
 
   return (
     <AnimatePresence>
