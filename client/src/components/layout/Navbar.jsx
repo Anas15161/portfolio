@@ -83,6 +83,7 @@ const Navbar = () => {
               </button>
             ))}
             <div className="flex items-center gap-4 pl-4 border-l border-gray-800">
+              {/* Mon CV button temporairement masqué
               <button 
                 onClick={() => setIsCvOpen(true)}
                 className="flex items-center gap-2 px-4 py-2 bg-accent1/10 hover:bg-accent1 text-accent1 hover:text-black border border-accent1/30 rounded-lg text-sm font-bold transition-all shadow-[0_0_10px_rgba(0,245,255,0.1)] hover:shadow-[0_0_20px_rgba(0,245,255,0.4)]"
@@ -90,6 +91,7 @@ const Navbar = () => {
                 <FileText size={16} />
                 <span>{language === 'fr' ? 'Mon CV' : 'My Resume'}</span>
               </button>
+              */}
               <ThemeSwitcher />
               <LanguageSwitcher />
             </div>
@@ -120,6 +122,7 @@ const Navbar = () => {
                 </button>
               ))}
               <div className="flex flex-col gap-4 mt-4 pt-4 border-t border-gray-800">
+                {/* Mon CV button temporairement masqué
                 <button 
                   onClick={() => { setIsCvOpen(true); setIsMobileMenuOpen(false); }}
                   className="flex items-center justify-center gap-2 w-full py-3 bg-accent1 text-black font-bold rounded-lg"
@@ -127,6 +130,7 @@ const Navbar = () => {
                   <FileText size={18} />
                   <span>{language === 'fr' ? 'Voir Mon CV' : 'View My Resume'}</span>
                 </button>
+                */}
                 <div className="flex items-center justify-center gap-6 pb-2">
                   <ThemeSwitcher />
                   <LanguageSwitcher />
