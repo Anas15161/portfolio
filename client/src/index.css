@@ -1,0 +1,117 @@
+/* /home/anas/Desktop/portefolio/portfolio/client/src/index.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent1: 0 245 255;
+    --accent2: 124 58 237;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-background text-white antialiased overflow-x-hidden;
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  
+  .transform-style-3d {
+    transform-style: preserve-3d;
+  }
+  
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  
+  .rotate-y-180 {
+    transform: rotateY(180deg);
+  }
+
+  .bg-grid-pattern {
+    background-image: linear-gradient(to right, rgba(255,255,255,0.03) 1px, transparent 1px),
+                      linear-gradient(to bottom, rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 50px 50px;
+  }
+
+  .glass {
+    @apply bg-card/40 backdrop-blur-xl border border-gray-700/50 shadow-[0_8px_32px_0_rgba(0,0,0,0.37)];
+  }
+
+  .animate-gradient-border {
+    background-size: 200% auto;
+    animation: gradient-border 3s linear infinite;
+  }
+
+  @keyframes gradient-border {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-700 rounded-full border-2 border-background;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent1;
+}
+
+/* Bio Highlight Words */
+.bio-content .highlight {
+  color: rgb(var(--accent1));
+  font-weight: 700;
+  padding: 0 4px;
+  position: relative;
+  display: inline-block;
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.bio-content .highlight::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgb(var(--accent1) / 0.1);
+  border-radius: 4px;
+  transform: scaleY(0.3) translateY(10px);
+  transform-origin: bottom;
+  transition: all 0.3s ease;
+  z-index: -1;
+}
+
+.bio-content .highlight:hover {
+  color: rgb(var(--accent2));
+}
+
+.bio-content .highlight:hover::before {
+  background: rgb(var(--accent2) / 0.2);
+  transform: scaleY(1) translateY(0);
+}
