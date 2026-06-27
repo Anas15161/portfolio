@@ -39,8 +39,8 @@ const CvViewer = ({ isOpen, onClose }) => {
               </div>
               <div className="flex items-center gap-3">
                 <a 
-                  href={cvPath}
-                  download="Anas_Haddou_CV.pdf"
+                  href={`${cvPath}?v=1.1`}
+                  download="Anas_Haddou_CV_ATS.pdf"
                   className="flex items-center gap-2 px-4 py-2 bg-accent1/10 hover:bg-accent1 text-accent1 hover:text-black transition-colors rounded-lg font-bold text-sm border border-accent1/30"
                 >
                   <Download size={16} />
@@ -54,12 +54,12 @@ const CvViewer = ({ isOpen, onClose }) => {
                 </button>
               </div>
             </div>
-
+ 
             {/* PDF Viewer Body */}
             <div className="flex-1 bg-gray-900 w-full h-full relative">
               {/* Fallback to embedded Google Docs viewer if local PDF fails, or use native iframe */}
               <iframe 
-                src={`${cvPath}#toolbar=0&navpanes=0`} 
+                src={`${cvPath}?v=1.1#toolbar=0&navpanes=0`} 
                 title="CV Viewer"
                 className="w-full h-full border-none bg-white"
               >
@@ -67,7 +67,7 @@ const CvViewer = ({ isOpen, onClose }) => {
                   {language === 'fr' 
                     ? 'Votre navigateur ne supporte pas la lecture de PDF.' 
                     : 'Your browser does not support PDF viewing.'}
-                  <a href={cvPath} className="text-accent1 underline ml-2">Télécharger le PDF</a>
+                  <a href={`${cvPath}?v=1.1`} className="text-accent1 underline ml-2">Télécharger le PDF</a>
                 </p>
               </iframe>
             </div>
