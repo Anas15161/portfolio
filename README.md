@@ -82,11 +82,16 @@ Here are the key engineering projects referenced and linked directly in my portf
 
 | Project Name | Technology Stack | Key Features |
 | :--- | :--- | :--- |
-| **⚡ [Smart Grid Optimizer](https://github.com/Anas15161/SmartGrid)** | React 18, PyTorch, Stable-Baselines3 (PPO), Kafka, InfluxDB, MQTT, Docker | Distributed AI-driven electrical network optimizer using Reinforcement Learning to mitigate grid load peaks. |
+| **⚡ [Smart Grid Optimizer](https://github.com/Anas15161/SmartGrid)** | React 18, PyTorch, SB3 (PPO), Kafka, InfluxDB, MQTT, Docker | Distributed AI-driven electrical network optimizer using Reinforcement Learning to mitigate grid load peaks. |
 | **📡 [Telecom Churn Analytics](https://github.com/Anas15161/Telecom-Churn-Analytics)** | Flask, Python, Scikit-Learn (Random Forest, SMOTEENN), HTML5/CSS3/JS | Customer churn prediction platform using machine learning with live batch prediction features. |
-| **🚀 [DevOps CI/CD Dashboard](https://github.com/Anas15161/devops-ci-cd-dashboard)** | Node.js, Express, Jest, Docker (Multi-stage), GitHub Actions, Makefile | Automated delivery pipeline reducing Docker image footprint by 88% and providing real-time deployment metrics. |
-| **🛍️ [MiniShop E-Commerce](https://github.com/Anas15161/LaravelProject)** | Laravel 12, Tailwind CSS, AlpineJS, SQLite, DomPDF, Laravel Breeze | Complete e-commerce catalog with dynamic shopping cart, checkout flow, automated PDF invoicing, and admin control suite. |
-| **📱 [StockMaster Mobile ERP](https://github.com/Anas15161/StockMaster-ERP-Mobile)** | Flutter, Dart, SQLite, BLoC Pattern, MVVM | Offline-first mobile inventory tracking system synchronizing with a remote ERP. |
+| **🚀 [DevOps CI/CD Dashboard](https://github.com/Anas15161/devops-ci-cd-dashboard)** | Node.js, Express, Jest, Docker, GitHub Actions, Makefile | Automated delivery pipeline reducing Docker image footprint by 88% and providing real-time deployment metrics. |
+| **🛍️ [MiniShop E-Commerce](https://github.com/Anas15161/LaravelProject)** | Laravel 12, Tailwind CSS, AlpineJS, SQLite, DomPDF, Breeze | Complete e-commerce catalog with dynamic shopping cart, checkout flow, automated PDF invoicing, and admin control suite. |
+| **📱 [StockMaster Mobile ERP](https://github.com/Anas15161/stockmaster)** | Flutter, Dart, SQLite, BLoC Pattern, MVVM | Offline-first mobile inventory tracking system with camera barcode/QR scanner. |
+| **📦 [SmartStock ERP](https://github.com/Anas15161/SmartStockERP)** | Jakarta EE 10, Hibernate, Oracle XE, Jersey, iText 7, JSP | Enterprise-grade inventory and supplier management ERP running on an N-tier architecture. |
+| **⚽ [PlayerPredict](https://github.com/Anas15161/PlayerPredict)** | Python, Scikit-Learn, XGBoost, HTML5/JS, Pandas, Joblib | Sports analytics and machine learning application predicting MU lineups based on player metrics. |
+| **📝 [GestionNotes Django](https://github.com/Anas15161/GestionNotes)** | Django, Python, SQLite, Bootstrap, HTML/CSS | School grading and course registration management portal with custom admin controls. |
+| **☕ [GestionNotes Java Swing](https://github.com/Anas15161/Gestion-Notes-Java-Swing)** | Java SE, Swing, MySQL, JDBC | Desktop client software for academic grading record management with JDBC persistence. |
+| **🏥 [Hospital UML & Django](https://github.com/Anas15161/Syst-me-de-Gestion-Hospitali-re-Mod-lisation-UML)** | Django, UML, Python, MySQL, Bootstrap | Hospital resource scheduler engineered from detailed UML design diagrams. |
 
 ---
 

@@ -100,127 +100,352 @@ export const experienceData = [
 export const projectsData = [
   {
     id: 1,
-    title: "LaM3alam.ma (PFE)",
-    category: ["Web", "SaaS", "Backend"],
+    title: "Smart Grid Optimizer",
+    category: ["Web", "AI", "DevOps"],
     description: {
-      fr: "Plateforme éducative en ligne. Back-end Laravel complet, API REST documentée, architecture MVC, gestion des rôles.",
-      en: "Online educational platform. Complete Laravel back-end, documented REST API, MVC architecture, role management."
+      fr: "Plateforme distribuée d'optimisation énergétique en temps réel. Moteur d'IA (RL & Federated Learning) et supervision IoT.",
+      en: "Distributed real-time energy grid optimizer. AI engine (RL & Federated Learning) and IoT supervision dashboard."
     },
     longDescription: {
-      fr: "LaM3alam.ma est mon Projet de Fin d'Études, une plateforme éducative innovante conçue pour connecter les enseignants et les élèves. J'ai pris en charge le développement intégral du Back-end en utilisant le framework Laravel. Ce projet se distingue par son architecture MVC stricte, la création d'une API RESTful complète et hautement documentée, ainsi qu'un système avancé de gestion des rôles et des permissions. Les méthodes Agile et Scrum ont été appliquées tout au long du cycle de développement pour garantir une livraison itérative et de qualité.",
-      en: "LaM3alam.ma is my Final Year Project, an innovative educational platform designed to connect teachers and students. I took charge of the full Back-end development using the Laravel framework. This project is distinguished by its strict MVC architecture, the creation of a complete and highly documented RESTful API, as well as an advanced role and permission management system. Agile and Scrum methods were applied throughout the development cycle to ensure iterative and high-quality delivery."
+      fr: "Smart Grid Optimizer est une plateforme innovante conçue dans le cadre du département GI&IA de l'EMG. Elle combine l'Edge Computing pour la prise de décision locale, le Reinforcement Learning (PPO/DQN) pour l'auto-stabilisation du réseau face aux pics de charge, et le Federated Learning pour coordonner les nœuds de manière sécurisée et décentralisée. Le système comprend un pipeline de streaming de données InfluxDB/Kafka et une interface React fluide.",
+      en: "Smart Grid Optimizer is an innovative distributed energy optimization platform. It combines Edge Computing for local decisions, Reinforcement Learning (PPO/DQN) for self-stabilization during consumption peaks, and Federated Learning to coordinate nodes without data centralization. It features a robust real-time IoT streaming pipeline with Kafka, InfluxDB, and an interactive React dashboard."
     },
     features: {
-      fr: ["Architecture MVC Robuste", "API RESTful documentée (Swagger/Postman)", "Système complexe d'authentification et d'autorisation", "Modélisation de base de données avancée avec Eloquent ORM", "Dashboard administrateur complet"],
-      en: ["Robust MVC Architecture", "Documented RESTful API (Swagger/Postman)", "Complex authentication and authorization system", "Advanced database modeling with Eloquent ORM", "Comprehensive admin dashboard"]
+      fr: [
+        "Simulation interactive de pics de consommation avec réponse autonome de l'agent RL",
+        "Visualisation de séries temporelles de charge et délestage en direct sur React",
+        "Architecture IoT distribuée (MQTT, Apache Kafka, base séries temporelles InfluxDB)",
+        "Modélisation UML complète et planification de projet Agile Scrum (Gantt, PERT)"
+      ],
+      en: [
+        "Interactive grid load peak simulation with real-time RL agent response log",
+        "Live time-series chart monitoring frequency, voltage, and CO2 savings on React",
+        "Distributed IoT pipeline (MQTT, Apache Kafka, InfluxDB TSDB)",
+        "Comprehensive UML designs and Agile Scrum Gantt/PERT project planning"
+      ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/2a2a2a/00f5ff?text=LaM3alam+Dashboard",
-      "https://placehold.co/1200x800/2a2a2a/00f5ff?text=LaM3alam+API+Docs"
+      "https://placehold.co/1200x800/111827/38bdf8?text=Smart+Grid+Dashboard",
+      "https://placehold.co/1200x800/111827/38bdf8?text=RL+Agent+Simulation"
     ],
-    stack: ["Laravel", "PHP", "MySQL", "Eloquent", "REST API", "Agile"],
-    status: { fr: "En production (PFE)", en: "In production" },
-    github: "#",
+    stack: ["React", "Python", "PyTorch", "Kafka", "MQTT", "InfluxDB", "Docker"],
+    status: { fr: "Terminé (EMG)", en: "Completed (EMG)" },
+    github: "https://github.com/Anas15161/SmartGrid.git",
     demo: "#"
   },
   {
     id: 2,
-    title: "Tayssir",
-    category: ["Web", "Backend"],
+    title: "Telecom Churn Analytics",
+    category: ["Web", "AI", "Data Science"],
     description: {
-      fr: "Système de génération automatique de rapports officiels. Vues Blade dynamiques, export HTML/PDF, filtrage avancé.",
-      en: "Automatic official report generation system. Dynamic Blade views, HTML/PDF export, advanced filtering."
+      fr: "Système de prédiction industrielle du taux d'attrition client (churn) pour Horizon Telecom avec interface Web interactive.",
+      en: "Industrial client churn prediction system for Horizon Telecom featuring a reactive Web simulation dashboard."
     },
     longDescription: {
-      fr: "Le projet Tayssir a été développé pour automatiser et digitaliser la création de rapports officiels. J'ai implémenté un système de génération de documents complexes en HTML et PDF. L'interface repose sur des vues Blade dynamiques qui s'adaptent instantanément aux formulaires remplis par les utilisateurs. Le backend, propulsé par Laravel, assure un traitement de données rapide et sécurisé, incluant un système de filtrage de données multicritères très performant.",
-      en: "The Tayssir project was developed to automate and digitize the creation of official reports. I implemented a system for generating complex documents in HTML and PDF. The interface is based on dynamic Blade views that adapt instantly to user-filled forms. The backend, powered by Laravel, ensures fast and secure data processing, including a high-performance multi-criteria data filtering system."
+      fr: "Développé pour l'opérateur Horizon Telecom selon la méthodologie CRISP-DM. Ce projet s'attaque au problème critique de l'attrition. Il comprend l'exploration de données (EDA), l'équilibrage par SMOTEENN, l'entraînement de classificateurs ML (Random Forest champion à 95.9% F1-score), et le déploiement sur un serveur Web Flask permettant des prédictions unitaires et des analyses batch par importation de fichiers CSV/Excel.",
+      en: "Developed for Horizon Telecom following the CRISP-DM methodology. This project predicts customer attrition to orchestrate targeted loyalty campaigns. Includes Exploratory Data Analysis (EDA), SMOTEENN class balancing, model training (Random Forest champion with 95.9% F1-score), and deployment on a Flask web server for single predictions or batch CSV uploads."
     },
     features: {
-      fr: ["Génération automatisée de rapports PDF", "Vues Laravel Blade dynamiques et réactives", "Traitement par lots de données volumineuses", "Système de recherche et filtres avancés"],
-      en: ["Automated PDF report generation", "Dynamic and reactive Laravel Blade views", "Batch processing of large datasets", "Advanced search and filtering system"]
+      fr: [
+        "Formulaire de simulation en temps réel avec profils prédéfinis injectables",
+        "Analyse Batch permettant le chargement de listes de clients (CSV/Excel)",
+        "Tableau comparatif dynamique des performances des algorithmes ML évalués",
+        "Exportation directe des rapports de prédiction batch au format CSV"
+      ],
+      en: [
+        "Real-time interactive profile simulation form with one-click presets",
+        "Batch Client Analytics via CSV/Excel drag-and-drop file upload",
+        "Model performance comparison detailing confusion matrices and ROC curves",
+        "Direct export of batch predictions to downloadable CSV files"
+      ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/2a2a2a/00f5ff?text=Tayssir+Reporting",
-      "https://placehold.co/1200x800/2a2a2a/00f5ff?text=Tayssir+PDF+Export"
+      "https://placehold.co/1200x800/111827/10b981?text=Churn+Simulation+Form",
+      "https://placehold.co/1200x800/111827/10b981?text=Batch+Upload+Interface"
     ],
-    stack: ["Laravel", "Blade", "PHP", "MySQL", "PDF Export"],
+    stack: ["Flask", "Python", "Scikit-Learn", "SMOTEENN", "HTML/CSS/JS", "Pandas"],
     status: { fr: "Livré", en: "Delivered" },
-    github: "#",
+    github: "https://github.com/Anas15161/Telecom-Churn-Analytics.git",
     demo: "#"
   },
   {
     id: 3,
-    title: "SmartStock ERP",
-    category: ["Web", "Backend"],
+    title: "DevOps CI/CD Dashboard",
+    category: ["DevOps", "Web"],
     description: {
-      fr: "ERP de gestion d'interventions et stocks. Migration Java SE vers Jakarta EE 10, API Jersey REST, Hibernate ORM, Oracle XE.",
-      en: "Intervention and inventory management ERP. Migration from Java SE to Jakarta EE 10, Jersey REST API, Hibernate ORM, Oracle XE."
+      fr: "Pipeline de déploiement continu automatisé et tableau de bord de métriques de conteneurs en temps réel.",
+      en: "Automated continuous delivery pipeline and real-time container metrics dashboard."
     },
     longDescription: {
-      fr: "SmartStock ERP est un projet académique majeur visant à moderniser un système d'information de bureau (Java SE) vers une architecture web d'entreprise (Jakarta EE 10). L'application gère les stocks de matériel et planifie les interventions techniques. Le développement a mis l'accent sur la robustesse du backend avec la création d'une API RESTful (Jersey), le mapping objet-relationnel complexe (Hibernate) et l'intégration avec une base de données Oracle XE.",
-      en: "SmartStock ERP is a major academic project aimed at modernizing a desktop information system (Java SE) to an enterprise web architecture (Jakarta EE 10). The application manages hardware inventory and schedules technical interventions. The development focused on backend robustness with the creation of a RESTful API (Jersey), complex object-relational mapping (Hibernate), and integration with an Oracle XE database."
+      fr: "Ce projet démontre les meilleures pratiques de livraison de logiciels DevOps. Il met en place un pipeline GitHub Actions automatisé sur chaque commit, exécutant des tests Jest/Supertest, construisant une image Docker optimisée (taille réduite de 88% via multi-stage builds sur Alpine), la poussant sur Docker Hub, et mettant en ligne un tableau de bord Node.js affichant la santé de l'API et les informations de build injectées en temps réel.",
+      en: "This repository showcases a fully-automated DevOps CI/CD pipeline built around a Node.js web dashboard. It features a GitHub Actions workflow that runs Jest tests, builds an optimized multi-stage Alpine Docker container (88% size reduction), pushes to Docker Hub, and serves live uptime, health status, and metadata injected during compilation."
     },
     features: {
-      fr: ["Migration d'architecture monolithique vers web", "Intégration Jakarta EE 10 et Hibernate", "API REST développée avec Jersey", "Gestion de base de données relationnelle Oracle XE"],
-      en: ["Migration from monolithic to web architecture", "Jakarta EE 10 and Hibernate integration", "REST API developed with Jersey", "Oracle XE relational database management"]
+      fr: [
+        "Pipeline CI/CD complet automatisé (GitHub Actions & Docker Hub)",
+        "Conteneurisation hautement optimisée (Image de 900Mo réduite à 110Mo)",
+        "Visualisation interactive des rapports de tests Jest & couverture à 100%",
+        "Explorer de code interactif expliquant l'impact DevOps de chaque fichier"
+      ],
+      en: [
+        "Automated deployment pipeline running tests and building tagged releases",
+        "Multi-stage Docker build reducing container footprint from 900MB to 110MB",
+        "Visual Jest test suite dashboard showing code coverage metrics",
+        "Interactive code explorer detailing the DevOps importance of each script"
+      ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/2a2a2a/00f5ff?text=SmartStock+ERP",
-      "https://placehold.co/1200x800/2a2a2a/00f5ff?text=SmartStock+Inventory"
+      "https://placehold.co/1200x800/111827/6366f1?text=DevOps+Live+Metrics",
+      "https://placehold.co/1200x800/111827/6366f1?text=Jest+Visual+Test+Report"
     ],
-    stack: ["Jakarta EE", "Java 17", "Oracle XE", "Hibernate", "Jersey", "Bootstrap"],
-    status: { fr: "Projet académique", en: "Academic project" },
-    github: "#",
+    stack: ["Node.js", "Express", "Jest", "Docker", "GitHub Actions", "Makefile"],
+    status: { fr: "Opérationnel", en: "Operational" },
+    github: "https://github.com/Anas15161/devops-ci-cd-dashboard.git",
     demo: "#"
   },
   {
     id: 4,
-    title: "AeroSource SaaS",
-    category: ["Web", "SaaS"],
+    title: "MiniShop E-Commerce",
+    category: ["Web", "E-Commerce"],
     description: {
-      fr: "Solution cloud de gestion de l'eau via capteurs IoT. Dashboard temps réel, alertes automatisées, API sécurisée.",
-      en: "Cloud solution for water management via IoT sensors. Real-time dashboard, automated alerts, secure API."
+      fr: "Plateforme e-commerce moderne et complète avec gestion de panier de sessions, factures PDF et back-office.",
+      en: "Modern and fully-featured e-commerce platform with session shopping cart, PDF invoicing, and admin panel."
     },
     longDescription: {
-      fr: "AeroSource est un prototype SaaS innovant exploitant l'Internet des Objets (IoT) pour la gestion intelligente des ressources en eau. Le système collecte en temps réel les données de multiples capteurs, les stocke dans PostgreSQL via un backend robuste en Django, et les affiche sur un dashboard interactif en React. L'architecture inclut des systèmes d'alertes automatisés en cas de détection d'anomalies, le tout conteneurisé avec Docker.",
-      en: "AeroSource is an innovative SaaS prototype leveraging the Internet of Things (IoT) for smart water resource management. The system collects real-time data from multiple sensors, stores it in PostgreSQL via a robust Django backend, and displays it on an interactive React dashboard. The architecture includes automated alert systems for anomaly detection, all containerized with Docker."
+      fr: "MiniShop est une application e-commerce construite avec Laravel 12 et Tailwind CSS. Pour les clients, elle propose un catalogue avec recherche, un panier réactif et un export de factures PDF générées à la volée. Côté administrateur, elle offre un back-office complet (CRUD produits, gestion de stock en temps réel, catégorisation, et mise à jour dynamique du statut logistique des commandes).",
+      en: "MiniShop is a responsive e-commerce web application powered by Laravel 12 and Tailwind CSS. It delivers a seamless shopping experience for customers (catalog filters, session cart, secure checkout, PDF invoices) and a complete real-time administrative control panel for store owners (CRUD catalog, stock tracking, order status controls)."
     },
     features: {
-      fr: ["Intégration de données IoT en temps réel", "Dashboard analytique interactif (React)", "Système d'alertes et de notifications automatisées", "Backend API sécurisé (Django REST Framework)"],
-      en: ["Real-time IoT data integration", "Interactive analytical dashboard (React)", "Automated alert and notification system", "Secure API backend (Django REST Framework)"]
+      fr: [
+        "Panier d'achat basé sur la session avec calculs en temps réel",
+        "Génération de factures PDF professionnelles avec Barryvdh DomPDF",
+        "Back-office administrateur complet (Statistiques, Produits, Commandes)",
+        "Base de données relationnelle sécurisée et seeding de comptes de test"
+      ],
+      en: [
+        "Session-based shopping cart with real-time subtotal calculations",
+        "Dynamic PDF invoice generation and downloading with Barryvdh DomPDF",
+        "Robust back-office suite to manage products, categories, and logistics status",
+        "Secure database architecture pre-seeded with admin and client test accounts"
+      ]
     },
     screenshots: [
-      "https://placehold.co/1200x800/2a2a2a/00f5ff?text=AeroSource+Dashboard",
-      "https://placehold.co/1200x800/2a2a2a/00f5ff?text=AeroSource+IoT+Metrics"
+      "https://placehold.co/1200x800/111827/ef4444?text=MiniShop+Homepage",
+      "https://placehold.co/1200x800/111827/ef4444?text=Admin+Logistics+Management"
     ],
-    stack: ["Django", "React", "Python", "PostgreSQL", "IoT", "Docker"],
-    status: { fr: "Prototype", en: "Prototype" },
-    github: "#",
+    stack: ["Laravel 12", "Tailwind CSS", "AlpineJS", "Vite", "MySQL", "DomPDF"],
+    status: { fr: "Livré", en: "Delivered" },
+    github: "https://github.com/Anas15161/LaravelProject.git",
     demo: "#"
   },
   {
     id: 5,
-    title: "StockMaster App",
+    title: "StockMaster Mobile ERP",
     category: ["Mobile"],
     description: {
-      fr: "Application mobile d'inventaire avec architecture MVVM stricte. Navigation UI contrôlée, BLoC pattern, sync offline/online.",
-      en: "Mobile inventory app with strict MVVM architecture. Controlled UI navigation, BLoC pattern, offline/online sync."
+      fr: "Application mobile de gestion d'inventaire hors-ligne (Offline-first) avec architecture MVVM et BLoC.",
+      en: "Offline-first mobile inventory management ERP built with Flutter using MVVM & BLoC."
     },
     longDescription: {
-      fr: "StockMaster est une application mobile cross-platform construite avec Flutter, axée sur la gestion d'inventaire en mobilité. L'application se distingue par son architecture technique avancée : elle implémente strictement le pattern MVVM et utilise BLoC pour une gestion d'état prédictible. Une de ses caractéristiques phares est sa capacité à fonctionner hors-ligne grâce à une base de données SQLite locale, qui se synchronise automatiquement avec le serveur une fois la connexion rétablie.",
-      en: "StockMaster is a cross-platform mobile application built with Flutter, focused on mobile inventory management. The app stands out for its advanced technical architecture: it strictly implements the MVVM pattern and uses BLoC for predictable state management. One of its key features is its ability to work offline using a local SQLite database, which automatically syncs with the server once the connection is restored."
+      fr: "StockMaster est une application mobile cross-platform (Android, iOS, Windows) développée avec Flutter. Conçue pour la gestion de stocks en mobilité, elle implémente une base de données locale SQLite garantissant un fonctionnement hors-ligne optimal. L'architecture repose sur un pattern MVVM strict avec gestion d'état réactive (BLoC/Provider) et intègre un scanner photo de codes-barres/QR codes.",
+      en: "StockMaster is a cross-platform mobile application built with Flutter to digitalize store inventories. Adopting an offline-first strategy, it uses a local SQLite database with automatic state synchronization. It is structured with a strict MVVM pattern and includes a camera QR/Barcode scanner, secure SHA-256 local authentication, and customizable dark/light themes."
     },
     features: {
-      fr: ["Architecture MVVM et State Management (BLoC)", "Support du mode Hors-Ligne (Offline-first)", "Synchronisation de base de données locale (SQLite) vers Distante", "Interface Utilisateur fluide et animations personnalisées"],
-      en: ["MVVM Architecture and State Management (BLoC)", "Offline-first mode support", "Local (SQLite) to Remote database synchronization", "Smooth User Interface and custom animations"]
+      fr: [
+        "Architecture MVVM stricte et gestion d'états réactive (Provider/BLoC)",
+        "Stockage SQLite local et mode hors-ligne complet (Offline-first)",
+        "Scanner de codes-barres et QR codes intégré via la caméra du smartphone",
+        "Exportation de rapports d'inventaire en formats PDF et Excel/CSV"
+      ],
+      en: [
+        "Strict MVVM design architecture with reactive state management",
+        "Local database persistence via SQLite for seamless offline-first capability",
+        "Integrated camera barcode & QR code scanning for fast inventory checks",
+        "Professional reporting exports directly to PDF and Excel/CSV formats"
+      ]
     },
     screenshots: [
-      "https://placehold.co/600x1200/2a2a2a/00f5ff?text=StockMaster+Home",
-      "https://placehold.co/600x1200/2a2a2a/00f5ff?text=StockMaster+Scanner"
+      "https://placehold.co/600x1200/111827/0ea5e9?text=StockMaster+Mobile+Home",
+      "https://placehold.co/600x1200/111827/0ea5e9?text=StockMaster+QR+Scanner"
     ],
-    stack: ["Flutter", "Dart", "SQLite", "MVVM", "BLoC"],
-    status: { fr: "En développement", en: "In development" },
-    github: "#",
+    stack: ["Flutter", "Dart", "SQLite", "BLoC", "MVVM", "FL Chart"],
+    status: { fr: "Terminé", en: "Completed" },
+    github: "https://github.com/Anas15161/stockmaster.git",
+    demo: "#"
+  },
+  {
+    id: 6,
+    title: "SmartStock ERP (J2EE)",
+    category: ["Web", "Enterprise"],
+    description: {
+      fr: "Progiciel ERP de gestion de stocks et approvisionnements en architecture J2EE N-Tiers et base de données Oracle.",
+      en: "Enterprise ERP system for stock management built with Jakarta EE 10, Hibernate, and Oracle DB."
+    },
+    longDescription: {
+      fr: "SmartStockERP est un progiciel d'entreprise structuré en couches (N-Tiers) reposant sur Jakarta EE 10. Il utilise Hibernate pour la persistance avec une base de données Oracle XE. L'application intègre l'injection de dépendances CDI, une authentification sécurisée par BCrypt (4096 itérations), le suivi de commandes fournisseurs, la traçabilité des mouvements d'inventaire, et l'exportation de rapports PDF générés par iText 7.",
+      en: "SmartStockERP is a robust enterprise resource planning system built with Jakarta EE 10. Designed with a strict N-tier architecture, it features JPA/Hibernate object-relational mapping, secure BCrypt authentication, purchase order life cycle management, automatic inventory movements logging, and custom PDF report streaming with iText 7."
+    },
+    features: {
+      fr: [
+        "Architecture N-Tiers découplée (JSP, Servlets MVC, Services CDI, JPA)",
+        "Contrôle d'accès basé sur les rôles (RBAC) avec filtrage d'URL",
+        "Génération de rapports d'inventaire et bons de commande PDF via iText 7",
+        "Tableau de bord dynamique avec graphiques interactifs (Chart.js)"
+      ],
+      en: [
+        "Decoupled N-Tier architecture (JSP views, MVC Servlets, CDI, JPA Repositories)",
+        "Role-Based Access Control (RBAC) with secure session management and filters",
+        "Automated PDF generation for invoices and orders using iText 7",
+        "Supervision dashboard with data visualization using Chart.js"
+      ]
+    },
+    screenshots: [
+      "https://placehold.co/1200x800/111827/f59e0b?text=J2EE+ERP+Dashboard",
+      "https://placehold.co/1200x800/111827/f59e0b?text=Oracle+XE+Integration"
+    ],
+    stack: ["Jakarta EE 10", "Java 17", "Hibernate", "Oracle XE", "Jersey", "JSP"],
+    status: { fr: "Projet Académique", en: "Academic Project" },
+    github: "https://github.com/Anas15161/SmartStockERP.git",
+    demo: "#"
+  },
+  {
+    id: 7,
+    title: "PlayerPredict",
+    category: ["AI", "Data Science"],
+    description: {
+      fr: "Application de Machine Learning prédisant la titularisation des joueurs de Manchester United via Random Forest et XGBoost.",
+      en: "Machine Learning sports analytics app predicting Manchester United lineup starters using Random Forest and XGBoost."
+    },
+    longDescription: {
+      fr: "PlayerPredict est une solution complète de sports analytics. Elle entraîne et évalue des modèles prédictifs (80% d'exactitude pour Random Forest et 90% pour XGBoost) basés sur les statistiques de performance de la saison. Elle comprend un script d'entraînement automatisé, un pipeline de normalisation de données et une interface web interactive en mode sombre.",
+      en: "PlayerPredict is an end-to-end sports analytics application that predicts whether a player will start in the next lineup based on seasonal metrics. Compares Random Forest and XGBoost classifiers, exports serialized pipeline models (Joblib), and provides an interactive dark-themed web dashboard for starters simulation."
+    },
+    features: {
+      fr: [
+        "Double modélisation ML comparative (Random Forest vs XGBoost)",
+        "Simulateur de profil de joueur en temps réel (Bruno, Rashford, Sancho)",
+        "Classement de l'importance des variables clés influençant la titularisation",
+        "Script interactif de pipeline automatisé sous forme de menu console"
+      ],
+      en: [
+        "Dual-model ML comparative training (Random Forest vs XGBoost)",
+        "Real-time starter simulation UI with real player statistical presets",
+        "Feature importance tracking mapping game minutes, goals, and expected metrics",
+        "Automated terminal interface script for training, plotting, and running web app"
+      ]
+    },
+    screenshots: [
+      "https://placehold.co/1200x800/111827/da291c?text=PlayerPredict+Interface",
+      "https://placehold.co/1200x800/111827/da291c?text=ML+Evaluation+Metrics"
+    ],
+    stack: ["Python", "Scikit-Learn", "XGBoost", "HTML/JS", "Pandas", "Joblib"],
+    status: { fr: "Terminé", en: "Completed" },
+    github: "https://github.com/Anas15161/PlayerPredict.git",
+    demo: "#"
+  },
+  {
+    id: 8,
+    title: "GestionNotes Django",
+    category: ["Web", "Backend"],
+    description: {
+      fr: "Système académique de gestion des notes et de scolarité développé en Python avec Django.",
+      en: "Academic grading and student registration management system built with Django and Python."
+    },
+    longDescription: {
+      fr: "Un portail d'établissement scolaire conçu avec Django. Il gère l'inscription des étudiants, la répartition des cours par semestre, la saisie des notes et le calcul automatique des moyennes pondérées par module. L'interface utilise Bootstrap pour un rendu clair et responsive.",
+      en: "An academic school administration portal built on Django. Manages student enrollments, course schedules, grading records, and automatically calculates weighted modular averages. Built with a responsive Bootstrap frontend."
+    },
+    features: {
+      fr: [
+        "Gestion complète des étudiants, enseignants, modules et notes (CRUD)",
+        "Calcul automatisé des moyennes générales et d'admissibilité",
+        "Interface d'administration Django personnalisée et sécurisée",
+        "Recherche avancée et filtres par promotion et niveau"
+      ],
+      en: [
+        "Comprehensive database CRUD for students, teachers, modules, and grades",
+        "Automated arithmetic calculators for average marks and module completion",
+        "Secure out-of-the-box Django admin control suite",
+        "Search and filter utilities sorting by student class and semester"
+      ]
+    },
+    screenshots: [
+      "https://placehold.co/1200x800/111827/4f46e5?text=GestionNotes+Django+UI",
+      "https://placehold.co/1200x800/111827/4f46e5?text=Django+Database+Admin"
+    ],
+    stack: ["Django", "Python", "SQLite", "Bootstrap", "HTML/CSS"],
+    status: { fr: "Projet Académique", en: "Academic Project" },
+    github: "https://github.com/Anas15161/GestionNotes.git",
+    demo: "#"
+  },
+  {
+    id: 9,
+    title: "GestionNotes Java Swing",
+    category: ["Desktop"],
+    description: {
+      fr: "Application de bureau pour l'administration scolaire et le suivi des notes avec Java Swing et base de données MySQL.",
+      en: "Desktop application for academic grade tracking built with Java Swing and MySQL database."
+    },
+    longDescription: {
+      fr: "Une application lourde développée en Java SE (Swing) permettant aux enseignants et administrateurs d'enregistrer les informations académiques des étudiants. Elle se connecte à un serveur MySQL local via JDBC pour gérer la persistance de manière transactionnelle.",
+      en: "A robust desktop client software built with Java SE (Swing components). It enables school administrative staff to record and track academic grading data. Connects locally to a MySQL server database using JDBC drivers."
+    },
+    features: {
+      fr: [
+        "Interface graphique Java Swing intuitive avec gestionnaires de layout",
+        "Connexion transactionnelle MySQL via le driver JDBC officiel",
+        "Opérations CRUD d'étudiants et de relevés de notes en temps réel",
+        "Validation de formulaires et gestion des exceptions SQL"
+      ],
+      en: [
+        "Native Java Swing GUI featuring responsive layouts and table grids",
+        "Transactional MySQL connectivity driven by standard JDBC interfaces",
+        "Real-time database CRUD operations for academic record updates",
+        "Robust input validation checks and custom SQL exception logs"
+      ]
+    },
+    screenshots: [
+      "https://placehold.co/1200x800/111827/b07219?text=Java+Swing+Interface",
+      "https://placehold.co/1200x800/111827/b07219?text=MySQL+JDBC+Connection"
+    ],
+    stack: ["Java SE", "Swing", "MySQL", "JDBC"],
+    status: { fr: "Projet Académique", en: "Academic Project" },
+    github: "https://github.com/Anas15161/Gestion-Notes-Java-Swing.git",
+    demo: "#"
+  },
+  {
+    id: 10,
+    title: "Hospital UML & Django",
+    category: ["Web", "UML"],
+    description: {
+      fr: "Système de gestion hospitalière conçu via modélisation UML rigoureuse et implémenté sous Django.",
+      en: "Hospital management system engineered using rigorous UML modeling and implemented with Django."
+    },
+    longDescription: {
+      fr: "Ce projet intègre l'analyse de conception et l'implémentation logicielle. Après avoir modélisé l'architecture de la clinique (cas d'utilisation, diagrammes de séquence et diagrammes de classes UML), la solution a été développée en Django. Elle permet de gérer les dossiers patients, la planification des rendez-vous et le planning de garde des médecins.",
+      en: "An engineering-driven management system. After drafting the database design and patient lifecycle diagrams in UML (use case, sequence, and class diagrams), the core system was built in Django. It orchestrates patient records, scheduling of medical appointments, and doctor shifts."
+    },
+    features: {
+      fr: [
+        "Modélisation UML exhaustive (Diagrammes de Classes, Cas d'utilisation et Séquence)",
+        "Gestion des patients, des dossiers de santé et de la prise de rendez-vous",
+        "Rôles d'utilisateurs distincts pour les patients, les médecins et les réceptionnistes",
+        "Base de données relationnelle MySQL et intégration Bootstrap"
+      ],
+      en: [
+        "Rigorous UML blueprints (Class, Use Case, and Sequence UML Diagrams)",
+        "Interactive scheduler for clinic appointments and medical charts tracking",
+        "Distinct authorization profiles separating patients, doctors, and desk staff",
+        "MySQL relational database backend connected to a clean Bootstrap frontend"
+      ]
+    },
+    screenshots: [
+      "https://placehold.co/1200x800/111827/0285a2?text=Hospital+UML+Model",
+      "https://placehold.co/1200x800/111827/0285a2?text=Django+Hospital+Portal"
+    ],
+    stack: ["Django", "UML Modeling", "Python", "MySQL", "Bootstrap"],
+    status: { fr: "Projet Académique", en: "Academic Project" },
+    github: "https://github.com/Anas15161/Syst-me-de-Gestion-Hospitali-re-Mod-lisation-UML.git",
     demo: "#"
   }
 ];
